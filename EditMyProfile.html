@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Edit My profile</title>
+    </head>
+    <body>
+        <!--Title-->
+        <h1>Edit My Profile</h1>
+        <form method="POST" target="_self"> 
+            <div>
+                <!--Account Form -->
+                <div class="Account">
+                    <fieldset>
+                        <legend>Account</legend>
+                        <label>Profile Picture</label>
+                        <br>
+                        <input type="file">
+                        <br>
+                        <label for="username">Username</label>
+                        <br>
+                        <input type="text" name="Username" id="username" min="4" max="8" required>
+                        <br>
+                        <label for="password">Password</label>
+                        <br>
+                        <input type="password" name="password" id="password" min="6" required >
+                    </fieldset>
+                </div>
+                <!--Contacts Form-->
+                <div class="Contacts">
+                    <fieldset>
+                        <legend>Contacts</legend>
+                        <label>Facebook</label>
+                        <input type="url" placeholder="eg:https://www.Facebook.com">
+                        <br>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="eg:username@gmail.com" required>
+                        <br>
+                        <br>
+                        <label for="mobile">Mobile</label>
+                        <input type="tel" name="mobile" id="mobile" placeholder="eg:0123456789" max="11" required>
+                    </fieldset>
+                </div>
+                <br>
+                <!--Form Buttons-->
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+        <!--Back Button-->  
+        <a href="Profile.html">
+            <button><img src="arrow.png" width="10px">Back</button>        
+        </a>
+    </body>
+</html>

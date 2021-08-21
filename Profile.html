@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Profile</title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            .Pic1{ width: 400px; display: flex; flex-direction: row; align-items: center; justify-content: space-between; 
+            }
+            .Pic1 img { border-radius: 50%;
+            }
+            .userDetails { display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+            }
+            .userDetails label{ font-size: larger;
+            }
+            .userDetails label:first-child{ margin-block-end: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Profile-->
+        <h1>Profile</h1>
+        <div class="Profile1">
+            <div class="Pic1">
+                <img src="jokeri.jpg" alt="Profile Picture" width="200px" height="200">
+                <div class="userDetails">
+                    <label>Abdelnasser Ibrahim</label>
+                    <label>Egypt</label>    
+                </div>
+            </div>
+            <br>
+            <a href="EditMyProfile.html" target="_blank" > 
+                <button>Edit My Profile</button> 
+            </a>
+            <!--Contact Me-->
+            <form action="mailto:ih.ah34@gmail.com" method="POST" target="_self">
+                <fieldset>
+                    <legend>Contact me</legend>
+                    <textarea name="comment" maxlength="50" placeholder="Write Here"></textarea>
+                    <br>
+                    <input type="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
+        <hr>
+        <!--About ME-->
+        <h2>About Me</h2>
+        <div >
+            <div>
+                <a href="https://www.facebook.com">
+                    <img src="fb.png" alt="Facebook" width="50px" height="50px">
+                </a>
+            </div>
+            <div>
+                <a href="https://twitter.com/">
+                    <img src="twitter.png" alt="twitter" width="50px" height="50px">
+                </a>
+            </div>
+            <div>
+                <a href="tel:+201000909666">
+                    <img src="mobile.jpg" alt="mobile" width="50px" height="50px">
+                </a>
+            </div>
+        </div>
+        <hr>
+        <!--SKills-->
+        <h2>Skills</h2>
+        <div>
+            <table style= "width:50%">
+                <thead>
+                    <tr>
+                        <th>Num</th>
+                        <th>Skills</th>
+                        <th>Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Critical thinking</td>
+                        <td><input type="range" max="10" min="0" value="8"></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Self-Control</td>
+                        <td><input type="range" max="10" min="0" value="3"></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Listening Skills</td>
+                        <td><input type="range" max="10" min="0" value="10"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <!--Services-->
+        <h2>Services</h2>
+        <div>
+            <ol start="1">
+                <li>business services</li>
+                <li>personal services 
+                    <ul>
+                        <li>Event Planning</li>
+                        <li>Online Travel Agent</li>
+                    </ul>
+                </li>
+                <li>social services</li>
+            </ol>
+        </div>
+    </body>
+</html>
